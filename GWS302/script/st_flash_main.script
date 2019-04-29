@@ -1,0 +1,43 @@
+ 
+# OpenOCD script for stm32 flash programming
+
+# Clear any flash errors - REQUIRED!
+# FLASH_SR
+mww 0x40023c0c 0xf3
+
+sleep 10
+
+poll
+flash probe 0
+
+#flash erase_sector 0 0 last
+# sector 0	16K
+# sector 1	16K
+# sector 2	16K
+# sector 3	16K
+# sector 4	64K
+# sector 5	128K
+# sector 6	128K
+# sector 7	128K
+# sector 8	128K
+# sector 9	128K
+# sector 10	128K
+# sector 11	128K
+# for 256K version 5 sectors
+# for 512K version 7 sectors
+# for 1024K version 11 sectors
+
+# 'erase_sector' 'bank', 'first sector', 'last sector'
+# erase sectors 1 to last, not 0 as boot loader is here
+flash erase_sector 0 1 last
+
+# can use auto erase when writing whole device...
+# flash write_image erase GWS302XXX.bin 0x08000000 bin 
+
+# flash write_image <file> [offset] [type] - Write the image <file> to the current target's flash bank(s)
+# A relocation [offset] can be specified
+# the file [type] can be specified explicitly as 'bin' (binary), 'ihex' # (Intel hex), 'elf' (ELF file) or 's19' (Motorola s19). 
+# additional offset for main code is at 0x4000 as we have boot loader
+flash write_image GWS302XXX.bin 0x08004000 bin 
+
+sleep 10

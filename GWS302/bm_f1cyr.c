@@ -1,0 +1,666 @@
+// Graphic Font Size 1 - IS08859-5 Cyrillic 
+
+// Include Standard files
+#include "global.h"
+
+/*
+struct fn1 {
+       unsigned char spc;
+       const unsigned char *f1[256];
+       };
+extern struct fn1 const fnt1_EUR;
+extern struct fn1 const fnt1_CYR;
+extern struct fn1 const * const fnt1[MAXLANGUAGES];
+*/
+
+/* characters for ISO8859-5 */
+const unsigned char F1_I5A1[9] = { 5, 7, 0x50,
+  0x00,
+  0xf8,
+  0x80,
+  0xf0,
+  0x80,
+  0xf8 };
+
+const unsigned char F1_I5A6[9] = { 5, 7, 0x70,
+  0x20,
+  0x20,
+  0x20,
+  0x20,
+  0x20,
+  0x70 };
+
+const unsigned char F1_I5A8[9] = { 5, 7, 0x38,
+  0x10,
+  0x10,
+  0x10,
+  0x10,
+  0x90,
+  0x60 };
+
+const unsigned char F1_I5A9[9] = { 7, 7, 0x7c,
+  0x28,
+  0x28,
+  0x2c,
+  0x2a,
+  0xaa,
+  0x4c };
+
+const unsigned char F1_I5AA[9] = { 6, 7, 0x90,
+  0x90,
+  0x90,
+  0xf8,
+  0x94,
+  0x94,
+  0x98 };
+
+const unsigned char F1_I5AF[9] = { 5, 7, 0x88,
+  0x88,
+  0x88,
+  0x88,
+  0x88,
+  0xf8,
+  0x20 };
+
+const unsigned char F1_I5B0[9] = { 5, 7, 0x20,
+  0x50,
+  0x50,
+  0x88,
+  0xf8,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5B1[9] = { 5, 7, 0xf8,
+  0x80,
+  0x80,
+  0xf0,
+  0x88,
+  0x88,
+  0xf0 };
+
+const unsigned char F1_I5B2[9] = { 5, 7, 0xf0,
+  0x88,
+  0x88,
+  0xf0,
+  0x88,
+  0x88,
+  0xf0 };
+
+const unsigned char F1_I5B3[9] = { 5, 7, 0xf8,
+  0x48,
+  0x40,
+  0x40,
+  0x40,
+  0x40,
+  0xe0 };
+
+const unsigned char F1_I5B4[9] = { 6, 7, 0x38,
+  0x28,
+  0x28,
+  0x48,
+  0x48,
+  0xfc,
+  0x84 };
+
+const unsigned char F1_I5B5[9] = { 5, 7, 0xf8,
+  0x80,
+  0x80,
+  0xf0,
+  0x80,
+  0x80,
+  0xf8 };
+
+const unsigned char F1_I5B6[9] = { 5, 7, 0xa8,
+  0xa8,
+  0x70,
+  0x20,
+  0x70,
+  0xa8,
+  0xa8 };
+
+const unsigned char F1_I5B7[9] = { 5, 7, 0x70,
+  0x88,
+  0x08,
+  0x70,
+  0x08,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5B8[9] = { 5, 7, 0x88,
+  0x98,
+  0x98,
+  0xa8,
+  0xc8,
+  0xc8,
+  0x88 };
+
+const unsigned char F1_I5B9[9] = { 5, 7, 0x50,
+  0x20,
+  0x88,
+  0x98,
+  0xa8,
+  0xc8,
+  0x88 };
+
+const unsigned char F1_I5BA[9] = { 5, 7, 0x88,
+  0x90,
+  0xa0,
+  0xc0,
+  0xa0,
+  0x90,
+  0x88 };
+
+const unsigned char F1_I5BB[9] = { 5, 7, 0x78,
+  0x28,
+  0x28,
+  0x48,
+  0x48,
+  0x48,
+  0xc8 };
+
+const unsigned char F1_I5BC[9] = { 5, 7, 0x88,
+  0xd8,
+  0xa8,
+  0xa8,
+  0x88,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5BD[9] = { 5, 7, 0x88,
+  0x88,
+  0x88,
+  0xf8,
+  0x88,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5BE[9] = { 5, 7, 0x70,
+  0x88,
+  0x88,
+  0x88,
+  0x88,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5BF[9] = { 5, 7, 0xf8,
+  0x88,
+  0x88,
+  0x88,
+  0x88,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5C0[9] = { 5, 7, 0xf0,
+  0x88,
+  0x88,
+  0xf0,
+  0x80,
+  0x80,
+  0x80 };
+
+const unsigned char F1_I5C1[9] = { 5, 7, 0x70,
+  0x88,
+  0x80,
+  0x80,
+  0x80,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5C2[9] = { 5, 7, 0xf8,
+  0x20,
+  0x20,
+  0x20,
+  0x20,
+  0x20,
+  0x20 };
+
+const unsigned char F1_I5C3[9] = { 5, 7, 0x88,
+  0x88,
+  0x50,
+  0x20,
+  0x20,
+  0x20,
+  0xc0 };
+
+const unsigned char F1_I5C4[9] = { 5, 7, 0x20,
+  0x70,
+  0xa8,
+  0xa8,
+  0xa8,
+  0x70,
+  0x20 };
+
+const unsigned char F1_I5C5[9] = { 5, 7, 0x88,
+  0x88,
+  0x50,
+  0x20,
+  0x50,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5C6[9] = { 5, 7, 0x90,
+  0x90,
+  0x90,
+  0x90,
+  0x90,
+  0xf8,
+  0x08 };
+
+const unsigned char F1_I5C7[9] = { 5, 7, 0x88,
+  0x88,
+  0x88,
+  0x78,
+  0x08,
+  0x08,
+  0x08 };
+
+const unsigned char F1_I5C8[9] = { 5, 7, 0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xf8 };
+
+const unsigned char F1_I5C9[9] = { 6, 7, 0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xfc,
+  0x04 };
+
+const unsigned char F1_I5CA[9] = { 5, 7, 0xc0,
+  0x40,
+  0x70,
+  0x48,
+  0x48,
+  0x48,
+  0x70 };
+
+const unsigned char F1_I5CB[9] = { 6, 7, 0x84,
+  0x84,
+  0x84,
+  0xe4,
+  0x94,
+  0x94,
+  0xe4 };
+
+const unsigned char F1_I5CC[9] = { 5, 7, 0x80,
+  0x80,
+  0x80,
+  0xf0,
+  0x88,
+  0x88,
+  0xf0 };
+
+const unsigned char F1_I5CD[9] = { 5, 7, 0x60,
+  0x90,
+  0x08,
+  0x38,
+  0x08,
+  0x90,
+  0x60 };
+
+const unsigned char F1_I5CE[9] = { 6, 7, 0x98,
+  0xa4,
+  0xa4,
+  0xe4,
+  0xa4,
+  0xa4,
+  0x98 };
+
+const unsigned char F1_I5CF[9] = { 5, 7, 0x78,
+  0x88,
+  0x88,
+  0x78,
+  0x88,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5D0[9] = { 5, 7, 0x00,
+  0xf0,
+  0x08,
+  0x78,
+  0x88,
+  0x88,
+  0x78 };
+
+const unsigned char F1_I5D1[9] = { 5, 7, 0x08,
+  0x70,
+  0x80,
+  0xb0,
+  0xc8,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5D2[9] = { 5, 7, 0x00,
+  0xf0,
+  0x88,
+  0xf0,
+  0x88,
+  0x88,
+  0xf0 };
+
+const unsigned char F1_I5D3[9] = { 5, 7, 0x00,
+  0x00,
+  0xf8,
+  0x48,
+  0x40,
+  0x40,
+  0xe0 };
+
+const unsigned char F1_I5D4[9] = { 5, 7, 0x00,
+  0x30,
+  0x50,
+  0x50,
+  0x90,
+  0xf8,
+  0x88 };
+
+const unsigned char F1_I5D5[9] = { 5, 7, 0x00,
+  0x00,
+  0x70,
+  0x88,
+  0xf8,
+  0x80,
+  0x78 };
+
+const unsigned char F1_I5D6[9] = { 5, 7, 0x00,
+  0x00,
+  0xa8,
+  0xa8,
+  0x70,
+  0xa8,
+  0xa8 };
+
+const unsigned char F1_I5D7[9] = { 5, 7, 0x00,
+  0x00,
+  0xf0,
+  0x08,
+  0x70,
+  0x08,
+  0xf0 };
+
+const unsigned char F1_I5D8[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x98,
+  0xa8,
+  0xc8,
+  0x88 };
+
+const unsigned char F1_I5D9[9] = { 5, 7, 0x50,
+  0x20,
+  0x00,
+  0x98,
+  0xa8,
+  0xc8,
+  0x88 };
+
+const unsigned char F1_I5DA[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x90,
+  0xf0,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5DB[9] = { 5, 7, 0x00,
+  0x00,
+  0x78,
+  0x48,
+  0x48,
+  0x48,
+  0x88 };
+
+const unsigned char F1_I5DC[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0xd8,
+  0xa8,
+  0xa8,
+  0x88 };
+
+const unsigned char F1_I5DD[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x88,
+  0xf8,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5DE[9] = { 5, 7, 0x00,
+  0x00,
+  0x70,
+  0x88,
+  0x88,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5DF[9] = { 5, 7, 0x00,
+  0x00,
+  0xf8,
+  0x88,
+  0x88,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5E0[9] = { 5, 7, 0x00,
+  0xb0,
+  0xc8,
+  0xc8,
+  0xb0,
+  0x80,
+  0x80 };
+
+const unsigned char F1_I5E1[9] = { 5, 7, 0x00,
+  0x00,
+  0x70,
+  0x88,
+  0x80,
+  0x80,
+  0x78 };
+
+const unsigned char F1_I5E2[9] = { 5, 7, 0x00,
+  0x00,
+  0xf8,
+  0x20,
+  0x20,
+  0x20,
+  0x20 };
+
+const unsigned char F1_I5E3[9] = { 5, 7, 0x00,
+  0x88,
+  0x88,
+  0x58,
+  0x30,
+  0x20,
+  0xe0 };
+
+const unsigned char F1_I5E4[9] = { 5, 7, 0x00,
+  0x20,
+  0x70,
+  0xa8,
+  0xa8,
+  0x70,
+  0x20 };
+
+const unsigned char F1_I5E5[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x50,
+  0x20,
+  0x50,
+  0x88 };
+
+const unsigned char F1_I5E6[9] = { 5, 7, 0x00,
+  0x90,
+  0x90,
+  0x90,
+  0x90,
+  0xf8,
+  0x08 };
+
+const unsigned char F1_I5E7[9] = { 4, 7, 0x00,
+  0x90,
+  0x90,
+  0x90,
+  0x70,
+  0x10,
+  0x10 };
+
+const unsigned char F1_I5E8[9] = { 5, 7, 0x00,
+  0x00,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xf8 };
+
+const unsigned char F1_I5E9[9] = { 6, 7, 0x00,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xa8,
+  0xfc,
+  0x04 };
+
+const unsigned char F1_I5EA[9] = { 5, 7, 0x00,
+  0x00,
+  0xc0,
+  0x40,
+  0x70,
+  0x48,
+  0x70 };
+
+const unsigned char F1_I5EB[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x88,
+  0xc8,
+  0xa8,
+  0xc8 };
+
+const unsigned char F1_I5EC[9] = { 4, 7, 0x00,
+  0x00,
+  0x80,
+  0x80,
+  0xe0,
+  0x90,
+  0xe0 };
+
+const unsigned char F1_I5ED[9] = { 5, 7, 0x00,
+  0x00,
+  0x70,
+  0x88,
+  0x38,
+  0x88,
+  0x70 };
+
+const unsigned char F1_I5EE[9] = { 5, 7, 0x00,
+  0x00,
+  0x90,
+  0xa8,
+  0xe8,
+  0xa8,
+  0x90 };
+
+const unsigned char F1_I5EF[9] = { 5, 7, 0x00,
+  0x00,
+  0x78,
+  0x88,
+  0x78,
+  0x88,
+  0x88 };
+
+const unsigned char F1_I5F1[9] = { 5, 7, 0x50,
+  0x00,
+  0x70,
+  0x88,
+  0xf8,
+  0x80,
+  0x78 };
+
+const unsigned char F1_I5F6[9] = { 5, 7, 0x20,
+  0x00,
+  0x60,
+  0x20,
+  0x20,
+  0x20,
+  0x70 };
+
+const unsigned char F1_I5F8[9] = { 5, 7, 0x10,
+  0x00,
+  0x30,
+  0x10,
+  0x10,
+  0x90,
+  0x60 };
+
+const unsigned char F1_I5F9[9] = { 7, 7, 0x00,
+  0x00,
+  0x7c,
+  0x28,
+  0x2c,
+  0xaa,
+  0x4c };
+
+const unsigned char F1_I5FA[9] = { 6, 7, 0x00,
+  0x00,
+  0x90,
+  0x90,
+  0xf8,
+  0x94,
+  0x98 };
+
+const unsigned char F1_I5FF[9] = { 5, 7, 0x00,
+  0x00,
+  0x88,
+  0x88,
+  0x88,
+  0xf8,
+  0x20 };
+
+struct fn1 const fnt1_CYR = { 1,
+/*   0 */ F1_FILL, F1_ENT,  F1_DEG,  F1_RDS,  F1_CLK,  F1_POINT,F1_FILL, F1_FILL,
+/*   8 */ F1_FILL, F1_FILL ,F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+/*  16 */ F1_FILL, F1_FILL ,F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+/*  24 */ F1_FILL, F1_FILL ,F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+
+/*  32 */ F1_I120, F1_I121, F1_I122, F1_I123, F1_I124, F1_I125, F1_I126, F1_I127,
+/*  40 */ F1_I128, F1_I129, F1_I12A, F1_I12B, F1_I12C, F1_I12D, F1_I12E, F1_I12F,
+/*  48 */ F1_I130, F1_I131, F1_I132, F1_I133, F1_I134, F1_I135, F1_I136, F1_I137,
+/*  56 */ F1_I138, F1_I139, F1_I13A, F1_I13B, F1_I13C, F1_I13D, F1_I13E, F1_I13F,
+
+/*  64 */ F1_I140, F1_I141, F1_I142, F1_I143, F1_I144, F1_I145, F1_I146, F1_I147,
+/*  72 */ F1_I148, F1_I149, F1_I14A, F1_I14B, F1_I14C, F1_I14D, F1_I14E, F1_I14F,
+/*  80 */ F1_I150, F1_I151, F1_I152, F1_I153, F1_I154, F1_I155, F1_I156, F1_I157,
+/*  88 */ F1_I158, F1_I159, F1_I15A, F1_I15B, F1_I15C, F1_I15D, F1_I15E, F1_I15F,
+
+/*  96 */ F1_I160, F1_I161, F1_I162, F1_I163, F1_I164, F1_I165, F1_I166, F1_I167,
+/* 104 */ F1_I168, F1_I169, F1_I16A, F1_I16B, F1_I16C, F1_I16D, F1_I16E, F1_I16F,
+/* 112 */ F1_I170, F1_I171, F1_I172, F1_I173, F1_I174, F1_I175, F1_I176, F1_I177,
+/* 120 */ F1_I178, F1_I179, F1_I17A, F1_I17B, F1_I17C, F1_I17D, F1_I17E, F1_FILL,
+
+/* 128 */ F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+/* 136 */ F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+/* 144 */ F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+/* 152 */ F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_FILL,
+
+/* 160 */ F1_I120, F1_I5A1, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_I5A6, F1_FILL,
+/* 168 */ F1_I5A8, F1_I5A9, F1_I5AA, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_I5AF,
+/* 176 */ F1_I5B0, F1_I5B1, F1_I5B2, F1_I5B3, F1_I5B4, F1_I5B5, F1_I5B6, F1_I5B7,
+/* 184 */ F1_I5B8, F1_I5B9, F1_I5BA, F1_I5BB, F1_I5BC, F1_I5BD, F1_I5BE, F1_I5BF,
+
+/* 192 */ F1_I5C0, F1_I5C1, F1_I5C2, F1_I5C3, F1_I5C4, F1_I5C5, F1_I5C6, F1_I5C7,
+/* 200 */ F1_I5C8, F1_I5C9, F1_I5CA, F1_I5CB, F1_I5CC, F1_I5CD, F1_I5CE, F1_I5CF,
+/* 208 */ F1_I5D0, F1_I5D1, F1_I5D2, F1_I5D3, F1_I5D4, F1_I5D5, F1_I5D6, F1_I5D7,
+/* 216 */ F1_I5D8, F1_I5D9, F1_I5DA, F1_I5DB, F1_I5DC, F1_I5DD, F1_I5DE, F1_I5DF,
+
+/* 224 */ F1_I5E0, F1_I5E1, F1_I5E2, F1_I5E3, F1_I5E4, F1_I5E5, F1_I5E6, F1_I5E7,
+/* 232 */ F1_I5E8, F1_I5E9, F1_I5EA, F1_I5EB, F1_I5EC, F1_I5ED, F1_I5EE, F1_I5EF,
+/* 240 */ F1_FILL, F1_I5F1, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_I5F6, F1_FILL,
+/* 248 */ F1_I5F8, F1_I5F9, F1_I5FA, F1_FILL, F1_FILL, F1_FILL, F1_FILL, F1_I5FF
+   };
+

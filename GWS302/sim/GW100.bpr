@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="GW100.exe"/>
+    <OBJFILES value="GW100.obj Unit1.obj Unit2.obj Unit3.obj ..\bm_f1all.obj ..\bm_f1cyr.obj 
+      ..\bm_f1eur.obj ..\bm_num.obj ..\bm_sym.obj ..\display.obj 
+      ..\functions.obj ..\screens.obj crc32.obj"/>
+    <RESFILES value="GW100.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm Unit3.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..;..;..;..;..;..;..;.."/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="WINDOWS;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
+    <MAINSOURCE value="GW100.cpp"/>
+    <INCLUDEPATH value="..\;$(BCB)\include;$(BCB)\Include\Vcl;..;..\include"/>
+    <LIBPATH value="..\;&quot;c:\program files (x86)\borland\cbuilder6\lib\debug&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-sus -w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -Q -Vms -Vx -Ve -X- -r- -a8 -4 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -Sc:0x4000 -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="GW100.cpp" FORMNAME="" UNITNAME="GW100" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GW100.res" FORMNAME="" UNITNAME="GW100.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="GWiz" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="FormAbout" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bm_f1all.c" FORMNAME="" UNITNAME="bm_f1all.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bm_f1cyr.c" FORMNAME="" UNITNAME="bm_f1cyr.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bm_f1eur.c" FORMNAME="" UNITNAME="bm_f1eur.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bm_num.c" FORMNAME="" UNITNAME="bm_num.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bm_sym.c" FORMNAME="" UNITNAME="bm_sym.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\display.c" FORMNAME="" UNITNAME="display.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\functions.c" FORMNAME="" UNITNAME="functions.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\screens.c" FORMNAME="" UNITNAME="screens.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="crc32.c" FORMNAME="" UNITNAME="crc32" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=20
+Item0=$(BCB)\include;$(BCB)\Include\Vcl;..\;..\include
+Item1=$(BCB)\include;$(BCB)\Include\Vcl;.\include
+Item2=$(BCB)\include;$(BCB)\Include\Vcl;\include
+Item3=$(BCB)\include;$(BCB)\Include\Vcl;..\include
+Item4=$(BCB)\include;..\include
+Item5=D:\Eclipse;$(BCB)\include;$(BCB)\include\vcl;..\include
+Item6=$(BCB)\include;$(BCB)\include\vcl;..\GW100;..\include
+Item7=$(BCB)\include;$(BCB)\include\vcl
+Item8=..\SulkyCAN;..\SulkyPF;$(BCB)\include;$(BCB)\include\vcl
+Item9=..\SulkyCAN;..\SulkyPF;$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\PRO\SulkyVI
+Item10=..\SulkyCAN;..\SulkyPF;$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\PRO\SulkyVI;D:\Software\H8\PRO\SulkyPF;D:\Software\H8\PRO\SulkyCAN
+Item11=$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\PRO\SulkyVI;D:\Software\H8\PRO\SulkyPF;D:\Software\H8\PRO\SulkyCAN
+Item12=$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\PRO\LM8000
+Item13=
+Item14=
+Item15=
+Item16=
+Item17=
+Item18=
+Item19=
+
+[HistoryLists\hlLibraryPath]
+Count=8
+Item0=c:\program files (x86)\borland\cbuilder6\lib\debug;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\lib\obj;$(BCB)\lib
+Item2=D:\Eclipse;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\SulkyCAN;..\SulkyPF;$(BCB)\lib\obj;$(BCB)\lib
+Item4=
+Item5=
+Item6=
+Item7=
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=4
+Item0=WINDOWS;_DEBUG
+Item1=WINDOWS
+Item2=_DEBUG;WINDOWS
+Item3=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=1
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
